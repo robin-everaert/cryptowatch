@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+$primaryFont: 'Open Sans', sans-serif;;
+$secondFont: "Aldrich",sans-serif;
+
+$colorPrimary: #b80808;
+$colorTxt: #2b2b2b;
+$colorBack: #2b2b2b;
+$colorBackSecond: rgba(138, 138, 138, 0.25);
+$white: #fff;
+
+$green1: rgb(2, 172, 81);
+$green2: rgb(0, 253, 148);
+$green: #0f0;
+$red: #f00;
+$red1: rgb(255, 111, 86);
+$red2: rgb(251, 69, 63);
+$white1: #fff;
+$shadow: 0 5px 15px rgba(0, 0, 0, 0.322);
+
+:export {
+  colorPrimary: $colorPrimary;
+  colorTxt: $colorTxt;
+  white1: $white;
+  green: $green;
+  green1: $green1;
+  green2: $green2;
+  red : $red;
+  red1: $red1;
+  red2: $red2;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fff;
+  background-size: 2000%;
+  font-family: $primaryFont;
+  color: $colorTxt;
+  margin: 0 auto !important;
+  min-height: 100vh;
+
+}
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+label {
+  user-select: none;
+}

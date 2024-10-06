@@ -54,15 +54,15 @@ const TableLine = ({ coin, index }) => {
                     <img src={ coin.image } height="20" alt="" />
                 </div>
                 <div className="infos">
-                    <div className="chart-img" 
-                    onMouseEnter={ () => setShowChart(true) }  // Affichage graphique; 
-                    onMouseLeave={ () => setShowChart(false) }  // Disparition graphique;
+                    {/* <div className="chart-img" 
+                    onMouseEnter={ () => setShowChart(true) } 
+                    onMouseLeave={ () => setShowChart(false) } 
                     >
                         <img src="./assets/chart-icon.svg" alt="Chart-icon" />
                         <div className="chart-container" id={ coin.name }>
                             { showChart && <CoinChart coinId={ coin.id } coinName={ coin.name } /> }
                         </div>
-                    </div>   
+                    </div>    */}
                     <h4>{ coin.name }</h4> 
                     <span className="coin-symbol">- { coin.symbol.toUpperCase() }</span>
                     <a target="_blank" 

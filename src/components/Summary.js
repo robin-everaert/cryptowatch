@@ -17,7 +17,7 @@ const Summary = () => {
 
         <div className="summary-container">
                        
-              <h2>Synthèse:</h2>
+              <h2>Summary</h2>
                 
                 <div className="global-mkt">
                     <img src="./assets/check.svg" alt="" />
@@ -26,13 +26,13 @@ const Summary = () => {
                 </div>
                 <p>
                 <img src="./assets/check.svg" alt="" />
-                    Crypto-Monnaies: { " " } 
+                    cryptocurrencies: { " " } 
                     { summaryData.active_cryptocurrencies && 
                     summaryData.active_cryptocurrencies.toLocaleString() }
                 </p>
                 <p>
                     <img src="./assets/check.svg" alt="" />
-                    Marchés: { " " } 
+                    Markets: { " " } 
                     { summaryData.markets && 
                     summaryData.markets }
                 </p>

@@ -19,7 +19,7 @@ const Table = ({ coinsData }) => {
     /**
      * Table input headet table :
      */
-    const tableHeader = ["Prix", "MarketCap", "Volume", "1j", "1s", "1m", "Offre en circulation", "ATH"];
+    const tableHeader = ["Price", "MarketCap", "Volume", "1d", "1w", "1m", "Circulating Supply", "ATH"];
 
     /**
      * Exclusion des Stables Coins :

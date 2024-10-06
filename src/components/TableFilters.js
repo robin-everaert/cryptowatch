@@ -21,10 +21,10 @@ const TableFilters = () => {
     return (
         <div className="table-filters">
 
-                <button onClick={ () => setShowFavList(!showFavList) } >{ showFavList ? "Masquer vos favoris" : "Afficher vos favoris" }</button>               
-                <button onClick={ () => setShowStable(!showStable) } className="show-stable">{ showStable ? "Avec Stable Coin" : "Sans Stable Coin" }</button>
+                <button onClick={ () => setShowFavList(!showFavList) } >{ showFavList ? "Hide Favorites" : "Show Favorites" }</button>               
+                <button onClick={ () => setShowStable(!showStable) } className="show-stable">{ showStable ? "With stablecoins" : "Without stablecoins" }</button>
                 <div className="search-coin-container">
-                    <input type="text" onChange={ (e) => setShowSearch(e.target.value) } placeholder="Chercher par monnaie: " />   
+                    <input type="text" onChange={ (e) => setShowSearch(e.target.value) } placeholder="Search by cryptocurrency:" />   
                 </div>
                   
         </div>

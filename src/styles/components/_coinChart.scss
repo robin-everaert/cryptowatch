@@ -1,3 +1,7 @@
+.treemap-display-btn-container {
+  display: flex;
+  justify-content: center;
+}
 .chart-container {
   position: absolute;
   z-index: 1000;
@@ -7,7 +11,6 @@
   background: $colorBack;
   border-radius: 20px;
   overflow: hidden;
-  
 
   .coin-chart {
     padding: 20px;

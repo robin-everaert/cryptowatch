@@ -87,15 +87,6 @@ const GlobalChart = ({ coinsData }) => {
     return (
         <div className="global-chart">
 
-            <h2>Treemap:</h2>
-            <p>
-                Une Treemap, aussi appelée carte à cases ou carte proportionnelle, est une technique de visualisation de données. Elle permet de visualiser les informations hiérarchisées en arborescence comme sur un diagramme en arbre. Les données sont organisées en branches et en sous-branches.
-            </p>
-            <p>
-                La différence avec le diagramme en arbre est qu'une Treemap indique aussi la quantité associée à chaque catégorie. En effet, chaque catégorie est représentée par un rectangle dont la taille représente la quantité correspondante.
-            </p>
-            <button onClick={ () => setShowTreemap(!showTreemap) }>{ showTreemap ? "Masquer la treemap" : "Afficher la Treemap" }</button>
-
             { showTreemap && <Treemap
                 width={ 1000 }
                 height={ 181 }
@@ -108,6 +99,12 @@ const GlobalChart = ({ coinsData }) => {
             <Tooltip content={ <TreemapToolTip /> } />    
             </Treemap> 
             }
+
+            <div className="treemap-display-btn-container">
+                <button onClick={ () => setShowTreemap(!showTreemap) }>
+                    { showTreemap ? "Hide Treemap" : "Show Treemap" }
+                </button>
+            </div>
              
         </div>
     );
